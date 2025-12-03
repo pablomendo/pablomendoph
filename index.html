@@ -1,1 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotografía Gastronómica Publicitaria - Bares y Restaurantes</title>
+    <!-- Carga de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configuración de Tailwind para usar la fuente Inter y colores oscuros -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-dark': '#121212', // Fondo Principal Oscuro
+                        'secondary-gold': '#ffb703', // Dorado/Ámbar Brillante (Acento)
+                        'accent-gray': '#1f2937', // Gris Oscuro para Tarjetas (Dark Card Gray)
+                    },
+                    fontFamily: {
+                        // Aquí se define la tipografía base (Inter) para toda la página
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    backgroundImage: {
+                        /* Imagen de fondo corregida: Usamos cocina_sushi.jpg + gradiente oscuro */
+                        'hero-pattern': 'linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)), url("img/cocina_sushi.jpg")',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Estilos personalizados para un efecto más limpio y moderno */
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5); /* Sombra más fuerte en modo oscuro */
+        }
+        .text-shadow {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+        }
+        /* Icono de Instagram (inline SVG) */
+        .icon-instagram {
+            fill: none;
+            stroke: currentColor;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            stroke-width: 2;
+        }
+    </style>
+</head>
+<body class="bg-primary-dark text-gray-200">
 
+    <!-- 1. Header & Navegación (Ahora en modo oscuro) -->
+    <header class="bg-primary-dark shadow-xl sticky top-0 z-50 border-b border-gray-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <!-- Marca Personalizada: PABLOMENDOPH -->
+            <div class="text-2xl font-bold text-white">
+                PABLOMENDOPH
+                <span class="text-secondary-gold text-sm font-light block">Fotografía Gastronómica</span>
+            </div>
+            <nav class="hidden md:block">
+                <a href="#servicios" class="text-gray-400 hover:text-secondary-gold px-3 py-2 rounded-md text-sm font-medium transition duration-150">Servicios</a>
+                <a href="#portafolio" class="text-gray-400 hover:text-secondary-gold px-3 py-2 rounded-md text-sm font-medium transition duration-150">Portafolio</a>
+                <a href="#contacto" class="text-gray-400 hover:text-secondary-gold px-3 py-2 rounded-md text-sm font-medium transition duration-150">Contacto</a>
+            </nav>
+            <a href="tel:+5491157425925" class="bg-secondary-gold hover:bg-yellow-600 text-primary-dark font-semibold py-2 px-4 rounded-lg shadow-md transition duration-300 transform hover:scale-105 hidden sm:inline-block">
+                11 5742 5925
+            </a>
+            <!-- Mobile Menu Button - No funcional en este archivo, solo diseño -->
+            <button class="md:hidden text-gray-400 hover:text-secondary-gold">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- 2. Hero Section -->
+        <section id="hero" class="bg-hero-pattern bg-cover bg-center h-[70vh] flex items-center justify-center text-white p-4">
+            <div class="text-center max-w-3xl">
+                <!-- Titular principal en Mayúsculas y Minúsculas -->
+                <h1 class="text-5xl md:text-7xl font-extrabold mb-4 leading-tight text-shadow">
+                    No son Fotos: Es Marketing Visual para tu Restaurante.
+                </h1>
+                <!-- Subtítulo -->
+                <p class="text-xl md:text-2xl font-light mb-8 text-shadow">
+                    Imágenes que generan deseo y posicionan tu marca.
+                </p>
+                <!-- Botón de acción actualizado: CHARLEMOS y lleva a #contacto -->
+                <a href="#contacto" class="bg-secondary-gold hover:bg-yellow-600 text-primary-dark font-bold text-lg py-3 px-8 rounded-full shadow-2xl transition duration-300 transform hover:scale-105 inline-block">
+                    CHARLEMOS
+                </a>
+            </div>
+        </section>
+
+        <!-- 3. Servicios / Propuesta de Valor -->
+        <section id="servicios" class="py-16 md:py-24 bg-accent-gray">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-4xl font-bold text-secondary-gold mb-4">Contenido Estratégico para el Éxito Digital</h2>
+                <p class="text-xl text-gray-400 mb-12 max-w-3xl mx-auto">
+                    Nuestro enfoque va más allá del plato: documentamos el proceso, la calidad y el *mood* de tu local.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Servicio 1: Fotografía de Preparación y Cocina (Énfasis) -->
+                    <div class="bg-primary-dark p-6 rounded-xl shadow-2xl transition duration-300 card-hover border border-gray-700">
+                        <svg class="w-12 h-12 text-secondary-gold mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
+                        <h3 class="text-2xl font-semibold text-white mb-3">Cocina en Acción y Proceso</h3>
+                        <p class="text-gray-400">Capturamos la pasión del chef y la frescura de los ingredientes. Contenido de *backstage* para generar confianza y comunidad.</p>
+                    </div>
+
+                    <!-- Servicio 2: Platos y Menú Publicitario -->
+                    <div class="bg-primary-dark p-6 rounded-xl shadow-2xl transition duration-300 card-hover border border-gray-700">
+                        <svg class="w-12 h-12 text-secondary-gold mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-3m-6 4l-2 4h4m-2-4v2"></path></svg>
+                        <h3 class="text-2xl font-semibold text-white mb-3">Platos Terminados y Detalle</h3>
+                        <p class="text-gray-400">Composición y estilismo profesional para que cada plato se vea lujoso. Perfecto para *ads* y banners de promoción.</p>
+                    </div>
+
+                    <!-- Servicio 3: Fotografía Publicitaria y Producto (Actualizado) -->
+                    <div class="bg-primary-dark p-6 rounded-xl shadow-2xl transition duration-300 card-hover border border-gray-700">
+                        <svg class="w-12 h-12 text-secondary-gold mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V6m0 2v4m0 4v2"></path></svg>
+                        <!-- Título actualizado -->
+                        <h3 class="text-2xl font-semibold text-white mb-3">Fotografía Publicitaria y Producto</h3>
+                        <!-- Texto actualizado (sin paréntesis) -->
+                        <p class="text-gray-400">Generamos fotos de alto impacto para que tu producto se destaque ante la competencia</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Portafolio / Galería de Muestras -->
+        <section id="portafolio" class="py-16 md:py-24 bg-primary-dark">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-white text-center mb-12">Portafolio: Fotografía de Alto Contraste</h2>
+
+                <!-- Grid de Imágenes - Rutas CORREGIDAS (CON img/) -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+
+                    <!-- Fila 1: Productos Preparados (Platos Terminados) -->
+
+                    <div class="overflow-hidden rounded-xl shadow-2xl transition duration-300 transform hover:scale-[1.02] border-2 border-transparent hover:border-secondary-gold">
+                        <!-- 1. Hamburguesa -->
+                        <img src="img/hamburguesa.jpg" onerror="this.src='https://placehold.co/800x600/1f2937/ffb703?text=Hamburguesa';" alt="Hamburguesa doble con queso y bacon, fotografía publicitaria oscura" class="w-full h-72 object-cover">
+                    </div>
+                    <div class="overflow-hidden rounded-xl shadow-2xl transition duration-300 transform hover:scale-[1.02] border-2 border-transparent hover:border-secondary-gold">
+                        <!-- 2. Empanada -->
+                        <img src="img/empanada_corte.jpg" onerror="this.src='https://placehold.co/800x600/1f2937/ffb703?text=Empanada';" alt="Empanada de carne cortada al medio, estilo bodegón oscuro" class="w-full h-72 object-cover">
+                    </div>
+                    <div class="overflow-hidden rounded-xl shadow-2xl transition duration-300 transform hover:scale-[1.02] border-2 border-transparent hover:border-secondary-gold">
+                        <!-- 3. Sushi Pinzas -->
+                        <img src="img/sushi_pinzas.jpg" onerror="this.src='https://placehold.co/800x600/1f2937/ffb703?text=Sushi+Pinzas';" alt="Sushi roll siendo tomado con palillos, detalle de producto" class="w-full h-72 object-cover">
+                    </div>
+                    <div class="overflow-hidden rounded-xl shadow-2xl transition duration-300 transform hover:scale-[1.02] border-2 border-transparent hover:border-secondary-gold">
+                        <!-- 4. Sushi Rolls -->
+                        <img src="img/sushi_rolls.jpg" onerror="this.src='https://placehold.co/800x600/1f2937/ffb703?text=Rolls+Sushi';" alt="Rolls de sushi terminados, listos para servir" class="w-full h-72 object-cover">
+                    </div>
+
+
+                    <!-- Fila 2: Productos Empaquetados / Bodegón (FOTOGRAFÍA PUBLICITARIA Y PRODUCTO) -->
+
+                    <div class="overflow-hidden rounded-xl shadow-2xl transition duration-300 transform hover:scale-[1.02] border-2 border-transparent hover:border-secondary-gold">
+                        <!-- 5. QUESOS PACK (DSC_5576.jpg) -->
+                        <img src="img/quesos_pack.jpg" onerror="this.src='https://placehold.co/800x600/1f2937/ffb703?text=Quesos+y+Mantecas';" alt="Quesos y manteca envasada y presentada en mesa" class="w-full h-72 object-cover">
+                    </div>
+                    <div class="overflow-hidden rounded-xl shadow-2xl transition duration-300 transform hover:scale-[1.02] border-2 border-transparent hover:border-secondary-gold">
+                        <!-- 6. JAMON PACK (DSC_5561.jpg) -->
+                        <img src="img/jamon_pack.jpg" onerror="this.src='https://placehold.co/800x600/1f2937/ffb703?text=Jamon+envasado';" alt="Jamon envasado para publicidad de producto" class="w-full h-72 object-cover">
+                    </div>
+                     <div class="overflow-hidden rounded-xl shadow-2xl transition duration-300 transform hover:scale-[1.02] border-2 border-transparent hover:border-secondary-gold">
+                        <!-- 7. FIAMBRES MESA (DSC_5506.jpg) -->
+                        <img src="img/fiambres_mesa.jpg" onerror="this.src='https://placehold.co/800x600/1f2937/ffb703?text=Fiambres+Mesa';" alt="Mesa de fiambres y quesos con bebida y pan" class="w-full h-72 object-cover">
+                    </div>
+                    <div class="overflow-hidden rounded-xl shadow-2xl transition duration-300 transform hover:scale-[1.02] border-2 border-transparent hover:border-secondary-gold">
+                        <!-- 8. BACON PACK (DSC_5540.jpg) -->
+                        <img src="img/bacon_pack.jpg" onerror="this.src='https://placehold.co/800x600/1f2937/ffb703?text=Bacon+envasado';" alt="Fotografía de panceta y tocino envasado para catálogo" class="w-full h-72 object-cover">
+                    </div>
+                </div>
+                <div class="text-center mt-12">
+                     <a href="#contacto" class="bg-secondary-gold hover:bg-yellow-600 text-primary-dark font-bold text-lg py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105 inline-block">
+                        ¡Hagamos tu Sesión Publicitaria!
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Llamada a la Acción/Contacto -->
+        <section id="contacto" class="py-16 md:py-24 bg-accent-gray text-white border-t border-gray-700">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-4xl font-bold mb-4 text-secondary-gold">Impacta a tu Audiencia Hoy</h2>
+                <p class="text-xl font-light mb-8 text-gray-300">
+                    El contenido de alta calidad es la clave para atraer nuevos clientes y fidelizar a los actuales. ¡Hablemos de tu proyecto!
+                </p>
+
+                <!-- Información de Contacto -->
+                <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-8 mb-10">
+                    <div class="flex items-center space-x-3">
+                        <svg class="w-6 h-6 text-secondary-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                        <span class="text-lg font-semibold text-white">Teléfono (Buenos Aires):</span>
+                        <a href="tel:+5491157425925" class="text-secondary-gold hover:text-white font-bold transition duration-150">
+                            11 5742 5925
+                        </a>
+                    </div>
+                    
+                    <!-- Elemento para el Email de contacto -->
+                    <div class="flex items-center space-x-3">
+                        <svg class="w-6 h-6 text-secondary-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-18 8a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8z"></path></svg>
+                        <span class="text-lg font-semibold text-white">Email:</span>
+                        <a href="mailto:pablomendoph@gmail.com" class="text-secondary-gold hover:text-white font-bold transition duration-150">
+                            pablomendoph@gmail.com
+                        </a>
+                    </div>
+
+                    <!-- Elemento para Instagram -->
+                    <div class="flex items-center space-x-3">
+                        <a href="https://www.instagram.com/pablomendoph" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-3 text-secondary-gold hover:text-white transition duration-150">
+                            <svg class="w-6 h-6 icon-instagram" viewBox="0 0 24 24">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                            <span class="text-lg font-semibold">Instagram: @pablomendoph</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Formulario de Contacto (Simulado) -->
+                <form class="bg-primary-dark p-8 rounded-xl shadow-2xl text-left text-gray-200 border border-gray-700">
+                    <div class="mb-4">
+                        <label for="nombre" class="block text-sm font-medium text-gray-400">Tu Nombre o Nombre del Local</label>
+                        <input type="text" id="nombre" name="nombre" class="mt-1 block w-full px-4 py-2 border border-gray-600 bg-gray-800 rounded-md shadow-sm focus:ring-secondary-gold focus:border-secondary-gold">
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-sm font-medium text-gray-400">Email de Contacto</label>
+                        <!-- Valor predeterminado del email en el formulario -->
+                        <input type="email" id="email" name="email" value="pablomendoph@gmail.com" class="mt-1 block w-full px-4 py-2 border border-gray-600 bg-gray-800 rounded-md shadow-sm focus:ring-secondary-gold focus:border-secondary-gold">
+                    </div>
+                    <div class="mb-6">
+                        <label for="mensaje" class="block text-sm font-medium text-gray-400">Cuéntanos sobre tu proyecto (ej. "Tengo un bodegón y necesito fotos de la cocina y los platos")</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" class="mt-1 block w-full px-4 py-2 border border-gray-600 bg-gray-800 rounded-md shadow-sm focus:ring-secondary-gold focus:border-secondary-gold"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-secondary-gold hover:bg-yellow-600 text-primary-dark font-bold py-3 px-4 rounded-lg shadow-md transition duration-300 transform hover:scale-[1.01]">
+                        Enviar Solicitud de Presupuesto
+                    </button>
+                    <p class="text-xs text-gray-500 mt-3 text-center">Te responderemos en menos de 24 horas.</p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- 6. Footer -->
+    <footer class="bg-primary-dark text-white py-8 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="mb-4">
+                <a href="#servicios" class="text-gray-400 hover:text-secondary-gold mx-2">Servicios</a>
+                <a href="#portafolio" class="text-gray-400 hover:text-secondary-gold mx-2">Portafolio</a>
+                <a href="#contacto" class="text-gray-400 hover:text-secondary-gold mx-2">Contacto</a>
+            </p>
+            <!-- Instagram en el footer -->
+            <p class="text-sm text-gray-400 mb-2 flex items-center justify-center">
+                <svg class="w-4 h-4 mr-1 text-secondary-gold icon-instagram" viewBox="0 0 24 24">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+                <a href="https://www.instagram.com/pablomendoph" target="_blank" rel="noopener noreferrer" class="hover:text-secondary-gold">@pablomendoph</a>
+            </p>
+            <p class="text-sm text-gray-500">&copy; 2025 PABLOMENDOPH. Fotografía Gastronómica Publicitaria. Buenos Aires.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
