@@ -135,24 +135,25 @@
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
 
                     <!-- FILA 1: Platos Individuales -->
+                    <!-- NOTA: Los índices son 0 a 11 en el array JS -->
 
                     <div class="overflow-hidden rounded-xl shadow-2xl transition duration-300 transform hover:scale-[1.02] border-2 border-transparent hover:border-secondary-gold cursor-pointer" 
-                         onclick="openModal('img/Burger-doble.jpg', 'Hamburguesa Doble')">
+                         onclick="openModal(0)">
                         <!-- 1. Burger-doble.jpg -->
                         <img src="img/Burger-doble.jpg" onerror="this.src='https://placehold.co/800x600/1f2937/ffb703?text=Hamburguesa+Doble';" alt="Hamburguesa Doble" class="w-full h-72 object-cover">
                     </div>
                     <div class="overflow-hidden rounded-xl shadow-2xl transition duration-300 transform hover:scale-[1.02] border-2 border-transparent hover:border-secondary-gold cursor-pointer" 
-                         onclick="openModal('img/empanada_carne.jpg', 'Empanada de Carne')">
+                         onclick="openModal(1)">
                         <!-- 2. empanada_carne.jpg -->
                         <img src="img/empanada_carne.jpg" onerror="this.src='https://placehold.co/800x600/1f2937/ffb703?text=Empanada+Carne';" alt="Empanada de Carne" class="w-full h-72 object-cover">
                     </div>
                     <div class="overflow-hidden rounded-xl shadow-2xl transition duration-300 transform hover:scale-[1.02] border-2 border-transparent hover:border-secondary-gold cursor-pointer" 
-                         onclick="openModal('img/empanada_pollo.jpg', 'Empanada de Pollo')">
+                         onclick="openModal(2)">
                         <!-- 3. empanada_pollo.jpg -->
                         <img src="img/empanada_pollo.jpg" onerror="this.src='https://placehold.co/800x600/1f2937/ffb703?text=Empanada+Pollo';" alt="Empanada de Pollo" class="w-full h-72 object-cover">
                     </div>
                     <div class="overflow-hidden rounded-xl shadow-2xl transition duration-300 transform hover:scale-[1.02] border-2 border-transparent hover:border-secondary-gold cursor-pointer" 
-                         onclick="openModal('img/empanada_verdura.jpg', 'Empanada de Verdura')">
+                         onclick="openModal(3)">
                         <!-- 4. empanada_verdura.jpg -->
                         <img src="img/empanada_verdura.jpg" onerror="this.src='https://placehold.co/800x600/1f2937/ffb703?text=Empanada+Verdura';" alt="Empanada de Verdura" class="w-full h-72 object-cover">
                     </div>
@@ -161,22 +162,22 @@
                     <!-- FILA 2: Proceso y Detalle de Sushi -->
 
                     <div class="overflow-hidden rounded-xl shadow-2xl transition duration-300 transform hover:scale-[1.02] border-2 border-transparent hover:border-secondary-gold cursor-pointer" 
-                         onclick="openModal('img/preparado-roll-sushi.jpg', 'Preparación Sushi Roll')">
+                         onclick="openModal(4)">
                         <!-- 5. preparado-roll-sushi.jpg -->
                         <img src="img/preparado-roll-sushi.jpg" onerror="this.src='https://placehold.co/800x600/1f2937/ffb703?text=Preparacion+Sushi';" alt="Preparación Sushi Roll" class="w-full h-72 object-cover">
                     </div>
                     <div class="overflow-hidden rounded-xl shadow-2xl transition duration-300 transform hover:scale-[1.02] border-2 border-transparent hover:border-secondary-gold cursor-pointer" 
-                         onclick="openModal('img/corte-rollo-sushi.jpg', 'Corte de Rollo de Sushi')">
+                         onclick="openModal(5)">
                         <!-- 6. corte-rollo-sushi.jpg -->
                         <img src="img/corte-rollo-sushi.jpg" onerror="this.src='https://placehold.co/800x600/1f2937/ffb703?text=Corte+Sushi';" alt="Corte de Rollo de Sushi" class="w-full h-72 object-cover">
                     </div>
                      <div class="overflow-hidden rounded-xl shadow-2xl transition duration-300 transform hover:scale-[1.02] border-2 border-transparent hover:border-secondary-gold cursor-pointer" 
-                          onclick="openModal('img/servido-sushi-en-pizarra.jpg', 'Sushi Servido en Pizarra')">
+                          onclick="openModal(6)">
                         <!-- 7. servido-sushi-en-pizarra.jpg -->
                         <img src="img/servido-sushi-en-pizarra.jpg" onerror="this.src='https://placehold.co/800x600/1f2937/ffb703?text=Sushi+Servido';" alt="Sushi Servido en Pizarra" class="w-full h-72 object-cover">
                     </div>
                     <div class="overflow-hidden rounded-xl shadow-2xl transition duration-300 transform hover:scale-[1.02] border-2 border-transparent hover:border-secondary-gold cursor-pointer" 
-                         onclick="openModal('img/sushi-rolls-cebolla-frita.jpg', 'Sushi Rolls con Cebolla Frita')">
+                         onclick="openModal(7)">
                         <!-- 8. sushi-rolls-cebolla-frita.jpg -->
                         <img src="img/sushi-rolls-cebolla-frita.jpg" onerror="this.src='https://placehold.co/800x600/1f2937/ffb703?text=Sushi+Cebolla+Frita';" alt="Sushi Rolls con Cebolla Frita" class="w-full h-72 object-cover">
                     </div>
@@ -185,22 +186,22 @@
                     <!-- FILA 3: Productos Empaquetados / Bodegón -->
 
                     <div class="overflow-hidden rounded-xl shadow-2xl transition duration-300 transform hover:scale-[1.02] border-2 border-transparent hover:border-secondary-gold cursor-pointer" 
-                         onclick="openModal('img/bacon_pack.jpg', 'Bacon Empaquetado')">
+                         onclick="openModal(8)">
                         <!-- 9. bacon_pack.jpg -->
                         <img src="img/bacon_pack.jpg" onerror="this.src='https://placehold.co/800x600/1f2937/ffb703?text=Bacon+Empaquetado';" alt="Fotografía de panceta y tocino envasado para catálogo" class="w-full h-72 object-cover">
                     </div>
                     <div class="overflow-hidden rounded-xl shadow-2xl transition duration-300 transform hover:scale-[1.02] border-2 border-transparent hover:border-secondary-gold cursor-pointer" 
-                         onclick="openModal('img/fiambres_mesa.jpg', 'Mesa de Fiambres')">
+                         onclick="openModal(9)">
                         <!-- 10. fiambres_mesa.jpg -->
                         <img src="img/fiambres_mesa.jpg" onerror="this.src='https://placehold.co/800x600/1f2937/ffb703?text=Mesa+Fiambres';" alt="Mesa de fiambres y quesos con bebida y pan" class="w-full h-72 object-cover">
                     </div>
                     <div class="overflow-hidden rounded-xl shadow-2xl transition duration-300 transform hover:scale-[1.02] border-2 border-transparent hover:border-secondary-gold cursor-pointer" 
-                         onclick="openModal('img/jamon_pack.jpg', 'Jamon Empaquetado')">
+                         onclick="openModal(10)">
                         <!-- 11. jamon_pack.jpg -->
                         <img src="img/jamon_pack.jpg" onerror="this.src='https://placehold.co/800x600/1f2937/ffb703?text=Jamon+Empaquetado';" alt="Jamon envasado para publicidad de producto" class="w-full h-72 object-cover">
                     </div>
                     <div class="overflow-hidden rounded-xl shadow-2xl transition duration-300 transform hover:scale-[1.02] border-2 border-transparent hover:border-secondary-gold cursor-pointer" 
-                         onclick="openModal('img/quesos_pack.jpg', 'Quesos Empaquetados')">
+                         onclick="openModal(11)">
                         <!-- 12. quesos_pack.jpg -->
                         <img src="img/quesos_pack.jpg" onerror="this.src='https://placehold.co/800x600/1f2937/ffb703?text=Quesos+Empaquetados';" alt="Quesos y manteca envasada y presentada en mesa" class="w-full h-72 object-cover">
                     </div>
@@ -279,13 +280,28 @@
             </div>
         </section>
 
-        <!-- ESTRUCTURA MODAL (LIGHTBOX) -->
-        <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-90 hidden items-center justify-center z-[999]" onclick="closeModal()">
-            <div class="relative max-w-7xl max-h-screen p-4" onclick="event.stopPropagation()">
+        <!-- ESTRUCTURA MODAL (LIGHTBOX CON SLIDER) -->
+        <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-90 hidden items-center justify-center z-[999]">
+            <div class="relative w-full h-full flex items-center justify-center p-4">
+                
                 <!-- Botón de Cerrar (X) -->
                 <button onclick="closeModal()" class="absolute top-4 right-4 text-white text-4xl font-bold p-2 z-50 hover:text-secondary-gold transition" aria-label="Cerrar Imagen">&times;</button>
-                <!-- Imagen Ampliada -->
-                <img id="modalImageContent" src="" alt="Imagen Ampliada" class="max-h-[90vh] max-w-full rounded-lg shadow-2xl cursor-pointer" onclick="closeModal()">
+                
+                <!-- Flecha IZQUIERDA -->
+                <button onclick="prevImage(event)" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 hover:bg-opacity-75 text-white p-3 rounded-full z-50 transition hidden md:block" aria-label="Anterior">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                </button>
+
+                <!-- Contenido Principal: Imagen Ampliada -->
+                <div class="relative max-w-7xl max-h-screen flex items-center justify-center">
+                    <img id="modalImageContent" src="" alt="Imagen Ampliada" class="max-h-[90vh] max-w-full rounded-lg shadow-2xl">
+                </div>
+
+                <!-- Flecha DERECHA -->
+                <button onclick="nextImage(event)" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 hover:bg-opacity-75 text-white p-3 rounded-full z-50 transition hidden md:block" aria-label="Siguiente">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </button>
+
             </div>
         </div>
     </main>
@@ -313,12 +329,54 @@
 
     <!-- Scripts JavaScript para el Modal -->
     <script>
-        function openModal(imageSrc, altText) {
-            const modal = document.getElementById('imageModal');
+        // Array de objetos con las rutas y descripciones de las 12 imágenes del portafolio
+        const portfolioImages = [
+            { src: 'img/Burger-doble.jpg', alt: 'Hamburguesa Doble' }, // 0
+            { src: 'img/empanada_carne.jpg', alt: 'Empanada de Carne' }, // 1
+            { src: 'img/empanada_pollo.jpg', alt: 'Empanada de Pollo' }, // 2
+            { src: 'img/empanada_verdura.jpg', alt: 'Empanada de Verdura' }, // 3
+            { src: 'img/preparado-roll-sushi.jpg', alt: 'Preparación Sushi Roll' }, // 4
+            { src: 'img/corte-rollo-sushi.jpg', alt: 'Corte de Rollo de Sushi' }, // 5
+            { src: 'img/servido-sushi-en-pizarra.jpg', alt: 'Sushi Servido en Pizarra' }, // 6
+            { src: 'img/sushi-rolls-cebolla-frita.jpg', alt: 'Sushi Rolls con Cebolla Frita' }, // 7
+            { src: 'img/bacon_pack.jpg', alt: 'Bacon Empaquetado' }, // 8
+            { src: 'img/fiambres_mesa.jpg', alt: 'Mesa de Fiambres' }, // 9
+            { src: 'img/jamon_pack.jpg', alt: 'Jamon Empaquetado' }, // 10
+            { src: 'img/quesos_pack.jpg', alt: 'Quesos Empaquetados' }  // 11
+        ];
+
+        let currentImageIndex = 0;
+
+        function showImage() {
+            const image = portfolioImages[currentImageIndex];
             const modalImage = document.getElementById('modalImageContent');
             
-            modalImage.src = imageSrc;
-            modalImage.alt = altText || 'Imagen Ampliada';
+            modalImage.src = image.src;
+            modalImage.alt = image.alt;
+        }
+
+        function nextImage(event) {
+            // Evita que el clic se propague al fondo del modal y lo cierre
+            if (event) event.stopPropagation();
+
+            currentImageIndex = (currentImageIndex + 1) % portfolioImages.length;
+            showImage();
+        }
+
+        function prevImage(event) {
+            // Evita que el clic se propague al fondo del modal y lo cierre
+            if (event) event.stopPropagation();
+
+            currentImageIndex = (currentImageIndex - 1 + portfolioImages.length) % portfolioImages.length;
+            showImage();
+        }
+
+        function openModal(index) {
+            const modal = document.getElementById('imageModal');
+            
+            currentImageIndex = index;
+            showImage();
+
             modal.classList.remove('hidden');
             modal.classList.add('flex');
             document.body.style.overflow = 'hidden'; // Evita el scroll del fondo
@@ -330,6 +388,29 @@
             modal.classList.remove('flex');
             document.body.style.overflow = 'auto';
         }
+        
+        // Listener para cerrar el modal haciendo clic en el fondo
+        document.getElementById('imageModal').addEventListener('click', function(event) {
+            // Solo cierra si el clic es directamente en el fondo del modal
+            if (event.target.id === 'imageModal') {
+                closeModal();
+            }
+        });
+        
+        // Listener para navegación por teclado (flechas)
+        document.addEventListener('keydown', function(event) {
+            const modal = document.getElementById('imageModal');
+            if (modal.classList.contains('flex')) {
+                if (event.key === 'ArrowRight') {
+                    nextImage();
+                } else if (event.key === 'ArrowLeft') {
+                    prevImage();
+                } else if (event.key === 'Escape') {
+                    closeModal();
+                }
+            }
+        });
+
     </script>
 
 </body>
